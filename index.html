@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>Triangle Solver</title>
+
+    <style>
+      input {
+      width: 100%;
+      /*padding: 0.5em;*/
+      margin: 4% 0 10%;
+      font-size: 1.5em;
+      }
+      #submit {
+        margin: 0 5%;
+        width: 90%;
+        height: 2em;
+        background: #48e;
+        color: #fff;
+        border-radius: 0.25em;
+        border: none;
+        box-shadow: rgba(0,0,0,0.2) 0 -0.15em 0 0 inset;
+      }
+      .column {
+        float: left;
+        margin: 5%;
+        width: 40%;
+        text-align: center;
+      }
+      label {
+        font-weight: 500;
+      }
+    </style>
+    <script src="app.js" defer></script>
+
+  </head>
+
+  <body>
+    <form name="triangle">
+      <div class="column">
+        <label for="angleA">Angle A</label><br>
+        <input type="number" min="0" max="179" name="angleA" placeholder="Measure (°)"><br>
+        <label for="angleB">Angle B</label><br>
+        <input type="number" min="0" max="179" name="angleB" placeholder="Measure (°)"><br>
+        <label for="angleC">Angle C</label><br>
+        <input type="number" min="0" max="179" name="angleC" placeholder="Measure (°)"><br>
+      </div>
+      <div class="column">
+        <label for="sideA">Side A</label><br>
+        <input type="number" min="0" name="sideA" placeholder="Length"><br>
+        <label for="sideB">Side B</label><br>
+        <input type="number" min="0" name="sideB" placeholder="Length"><br>
+        <label for="sideC">Side C</label><br>
+        <input type="number" min="0" name="sideC" placeholder="Length"><br>
+      </div>
+      <input type="submit" id="submit" value="Solve">
+    </form>
+  </body>
+
+</html>
